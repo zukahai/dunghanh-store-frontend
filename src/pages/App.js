@@ -9,18 +9,21 @@ import{
 import TestComponent from '../components/test';
 import TestComponet2 from '../components/test2';
 import HomeComponent from '../components/home/home';
+import ContactComponent from '../components/contact/contact';
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
       <NavComponent/>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
         <Switch>
-            <Route exact  path="/" > <HomeComponent/> </Route>
-            <Route exact  path="/test1" > <TestComponent/> </Route>
-            <Route exact  path="/test2"> <TestComponet2/> </Route>
+            <Route  path="/" exact="true" > <HomeComponent/> </Route>
+            <Route  path="/test1" exact="true"> <TestComponent/> </Route>
+            <Route  path="/test2" exact="true"> <TestComponet2/> </Route>
+            <Route  path="/contact" exact="true"> <ContactComponent/> </Route>
         </Switch>
+        <img src={logo} className="App-logo" alt="logo" />
       </header>
     </div>
     </BrowserRouter>

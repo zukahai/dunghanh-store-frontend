@@ -3,7 +3,7 @@
 :root {
   --color-primary: #626475;
   --color-secondary: #F0F7EE;
-  --duration: 1s;
+  --duration: 0.5s;
   --nav-duration: calc(var(--duration) / 4);
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
   --space: 1rem;
@@ -28,6 +28,12 @@ h1 {
   // font-family: var(--font-heading);
   font-size: calc(var(--font-size) + 6vmin);
   line-height: calc(var(--line-height) / 1.25);
+}
+
+.active2{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-color: #494f5c;
 }
 
 .main-navigation-toggle {
@@ -72,16 +78,25 @@ h1 {
 }
 
 .main-navigation {
+  @media screen {
+    
+  }
   position: fixed;
   top: 0;
-  left: 0;
+  left: 60%;
   display: flex;
   align-items: center;
   width: 40%;
   height: 100%;
-  transform: translateX(-100%);
+  transform: translateX(-250%);
   transition: transform var(--nav-duration);
   z-index: 1;
+
+  @media only screen and (max-width: 600px) {
+    left: 0%;
+    width: 100%;
+    transform: translateX(-100%);
+  }
   
   &:after {
     content: '';
@@ -95,10 +110,12 @@ h1 {
     z-index: -1;
   }
   
+  
   ul {
     font-size: 24vmin;
     // font-family: var(--font-heading);
     width: 100%;
+    padding-left: 0;
   }
   
   li {
