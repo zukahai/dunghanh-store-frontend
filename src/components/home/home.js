@@ -9,6 +9,7 @@ class HomeComponent extends React.Component {
         return (
             <>
               <h1>Home</h1>
+              <img src='./logo.svg' className="App-logo" alt="logo" />
             </>
         );
     }

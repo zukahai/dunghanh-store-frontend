@@ -21,7 +21,7 @@ class DetailProductComponent extends React.Component {
                             className={"btn btn-primary mx-1"}
                             title="Back to list"
                         >
-                        <FontAwesomeIcon icon={faArrowLeft} />
+                        <h3><FontAwesomeIcon icon={faArrowLeft} /></h3>
                     </span>
                 </NavLink>
             </>

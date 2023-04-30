@@ -24,11 +24,16 @@ class ListProductComponent extends React.Component {
                 <h2>List of Products</h2>
                 <ul>
                     {this.state.products.map((product) => (
-                    <li key={product.id}>
-                        <img src={product.imageUrl} alt={product.name} />
+                    <li key={product.id} className='product-li'>
+                        <NavLink to={"product/" + product.id} exact="true">
+                            <img src={product.imageUrl} alt={product.name} />
+                        </NavLink>
                         <div className="product-details">
-                        <h3>{product.name}</h3>
-                        <NavLink to={"product/" + product.id} exact="true">{product.name}</NavLink>
+                        <h3>
+                            <NavLink to={"product/" + product.id} exact="true">
+                                {product.name}
+                            </NavLink>
+                        </h3>
                         <p>{product.description}</p>
                         <span>{product.price} USD</span>
                         </div>

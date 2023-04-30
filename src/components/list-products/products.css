@@ -15,11 +15,13 @@
     padding: 0;
   }
   
-  li {
+  .product-li {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
   
   img {
     width: 500px;
@@ -38,6 +40,12 @@
   h3 {
     font-size: 1.8rem;
     margin-bottom: 10px;
+    color: aliceblue;
+  }
+
+  h3>a{
+    color: aliceblue;
+    text-decoration: none;
   }
   
   p {

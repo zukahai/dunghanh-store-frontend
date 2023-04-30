@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import NavComponent from '../components/nav/nav-component';
 import{
@@ -27,7 +26,7 @@ function App() {
             <Route path="/test2" exact="true"> <TestComponet2/> </Route>
             <Route path="/contact" exact="true"> <ContactComponent/> </Route>
         </Switch>
-        <img src={logo} className="App-logo" alt="logo" />
+        
       </header>
     </div>
     </BrowserRouter>

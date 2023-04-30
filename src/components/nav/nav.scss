@@ -17,12 +17,6 @@
   box-sizing: border-box;
 }
 
-// body {
-//   font-family: var(--font-primary);
-//   font-size: var(--font-size);
-//   line-height: var(--line-height);
-// }
-
 h1 {
   margin-bottom: calc(var(--space) * 3);
   // font-family: var(--font-heading);
@@ -78,9 +72,6 @@ h1 {
 }
 
 .main-navigation {
-  @media screen {
-    
-  }
   position: fixed;
   top: 0;
   left: 60%;
