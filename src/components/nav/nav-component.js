@@ -1,34 +1,36 @@
 import React from 'react';
-import './nav.css';
+import './nav.scss';
 
 class NavComponent extends React.Component {
     render() {
         return (
             <>
-            <input type="checkbox" id="ham-menu"/>
-            <label for="ham-menu">
-              <div class="hide-des">
-                <span class="menu-line"></span>
-                <span class="menu-line"></span>
-                <span class="menu-line"></span>
-                <span class="menu-line"></span>
-                <span class="menu-line"></span>
-                <span class="menu-line"></span>
-              </div>
-            
-            </label>
-            <div class="full-page-green"></div>
-            <div class="ham-menu">
-              <ul class="centre-text bold-text">
-                <li>Home</li>
-                <li>Categories</li>
-                <li>Services</li>
-                <li>Shop</li>
-                <li>Support</li>
-                <li>Contact us</li>
-            
-              </ul>
-            </div>
+            <input id="page-nav-toggle" className="main-navigation-toggle" type="checkbox" />
+<label for="page-nav-toggle">
+  <svg className="icon--menu-toggle" viewBox="0 0 60 30">
+    <g className="icon-group">
+      <g className="icon--menu">
+        <path d="M 6 0 L 54 0" />
+        <path d="M 6 15 L 54 15" />
+        <path d="M 6 30 L 54 30" />
+      </g>
+      <g className="icon--close">
+        <path d="M 15 0 L 45 30" />
+        <path d="M 15 30 L 45 0" />
+      </g>
+    </g>
+  </svg>
+</label>
+
+<nav className="main-navigation">
+  <ul>
+    <li><a href="#0">Home ww</a></li>
+    <li><a href="#0">About</a></li>
+    <li><a href="#0">Contact</a></li>
+    <li><a href="#0">Dance</a></li>
+  </ul>
+</nav>
+
             </>
         );
     }
