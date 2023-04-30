@@ -20,6 +20,7 @@ function App() {
         
         <Switch>
             <Route path="/" exact="true" title="Home"> <HomeComponent/> </Route>
+            <Route path="/dunghanh-store-frontend" title="Home"> <HomeComponent/> </Route>
             <Route path="/products" exact="true" title="Products"> <ListProductComponent/> </Route>
             <Route path="/product/:id" exact="true"> <DetailProductComponent/> </Route>
             <Route path="/test1" exact="true"> <TestComponent/> </Route>
