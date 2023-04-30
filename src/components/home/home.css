@@ -1,11 +1,13 @@
 .App-logo {
-    height: 40vmin;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
+    border-radius: 50%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
     .App-logo {
-      animation: App-logo-spin infinite 20s linear;
+        animation: App-logo-spin infinite 20s linear;
     }
-  }
-  
+}
