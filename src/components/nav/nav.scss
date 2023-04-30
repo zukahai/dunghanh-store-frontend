@@ -30,7 +30,7 @@ h1 {
   line-height: calc(var(--line-height) / 1.25);
 }
 
-.active2{
+.active{
   color: rgb(255, 255, 255);
   font-weight: bold;
   background-color: #494f5c;
@@ -191,7 +191,7 @@ h1 {
       animation: link-appear calc(var(--duration) * 1.5) var(--ease) forwards;
     }
     
-    @for $i from 1 through 4 {
+    @for $i from 1 through 5 {
       li:nth-child(#{$i}) {
         &:after, a {
           animation-delay: calc((var(--duration) / 2) * #{$i} * 0.125);

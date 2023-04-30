@@ -10,6 +10,7 @@ import TestComponent from '../components/test';
 import TestComponet2 from '../components/test2';
 import HomeComponent from '../components/home/home';
 import ContactComponent from '../components/contact/contact';
+import ListProductComponent from '../components/products/products';
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
         
         <Switch>
             <Route  path="/" exact="true" > <HomeComponent/> </Route>
+            <Route  path="/products" exact="true" > <ListProductComponent/> </Route>
             <Route  path="/test1" exact="true"> <TestComponent/> </Route>
             <Route  path="/test2" exact="true"> <TestComponet2/> </Route>
             <Route  path="/contact" exact="true"> <ContactComponent/> </Route>

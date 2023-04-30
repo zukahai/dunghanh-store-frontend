@@ -27,10 +27,11 @@ class NavComponent extends React.Component {
 
               <nav className="main-navigation">
                 <ul>
-                  <li><NavLink to="/" end activeClassName="active2" exact="true">Home</NavLink></li>
-                  <li><NavLink to="/test1" end activeClassName="active2">Test1</NavLink></li>
-                  <li><NavLink to="/test2" end activeClassName="active2">Test2</NavLink></li>
-                  <li><NavLink to="/contact" end activeClassName="active2">Contact</NavLink></li>
+                  <li><NavLink to="/" end activeClassName="active" exact="true">Home</NavLink></li>
+                  <li><NavLink to="/products" end activeClassName="active" exact="true">Product</NavLink></li>
+                  <li><NavLink to="/test1" end activeClassName="active">Test1</NavLink></li>
+                  <li><NavLink to="/test2" end activeClassName="active">Test2</NavLink></li>
+                  <li><NavLink to="/contact" end activeClassName="active">Contact</NavLink></li>
                 </ul>
               </nav>
 
