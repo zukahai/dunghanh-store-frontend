@@ -1,7 +1,7 @@
 import React from 'react';
-import './nav.css';
+import './home.css';
 
-class NavComponent extends React.Component {
+class HomeComponent extends React.Component {
     render() {
         return (
             <>
@@ -34,4 +34,4 @@ class NavComponent extends React.Component {
     }
 }
 
-export default NavComponent;
+export default HomeComponent;
