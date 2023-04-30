@@ -2,6 +2,9 @@ import React from 'react';
 import './contact.scss';
 
 class ContactComponent extends React.Component {
+    componentDidMount() {
+        document.title = "Contact"
+    }
     render() {
         return (
             <>
