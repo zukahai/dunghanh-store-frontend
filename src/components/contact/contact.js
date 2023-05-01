@@ -21,7 +21,7 @@ class ContactComponent extends React.Component {
                     </div>
                     <div className="form-group">
                     <label htmlFor="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea id="message" name="message" required rows={6}></textarea>
                     </div>
                     <button type="submit" className="submit-button">Submit</button>
                 </form>

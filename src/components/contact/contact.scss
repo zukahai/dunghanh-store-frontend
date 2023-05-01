@@ -2,17 +2,24 @@
 	margin: 0 auto;
 	width: 50%;
 	max-width: 800px;
-  }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-container {
+		margin: 0 auto;
+		width: 90%;
+		max-width: 800px;
+	}
+}
   
-  form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: #2b1a1a94;
-	padding: 20px;
-	border-radius: 5px;
-  }
+form {
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #2b1a1a94;
+padding: 20px;
+border-radius: 5px;
+}
   
   .form-group {
 	display: flex;
