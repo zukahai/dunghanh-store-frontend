@@ -5,17 +5,22 @@ import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
 
 class DetailProductComponent extends React.Component {
     state={
-        id: this.props.match.params.id
+        id: this.props.match.params.id,
+        urlImage: 'https://picsum.photos/200/',
     }
     componentDidMount() {
-        document.title = "Product Detail id: " + this.state.id
+        document.title = "Product Detail id: " + this.state.id;
+        const urlImage = 'https://picsum.photos/200/' + (100 + Math.floor(this.props.match.params.id));
+        this.setState({
+            urlImage: urlImage
+        })
     }
     render() {
         return(
             <>
                 Detail User
                 <div>Id: {this.state.id}</div>
-                <img src='https://picsum.photos/200/400' alt='' />
+                <img src= {(this.state.urlImage)} alt='' />
                 <NavLink to={"/products" } exact="true">
                         <span
                             className={"btn btn-primary mx-1"}

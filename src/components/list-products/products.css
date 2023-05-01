@@ -45,9 +45,17 @@
     color: aliceblue;
   }
 
-  h3>a{
+  h2>a{
     color: aliceblue;
     text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  h2>a:hover{
+    font-size: 3rem;
+    color: aquamarine;
+    transform: rotate(360deg);
+    transition: 0.1s;
   }
   
   p {
