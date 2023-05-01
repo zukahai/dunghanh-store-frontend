@@ -22,14 +22,19 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  
+  @media only screen and (max-width: 900px) {
+    .product-li {
+      display: inline-block;
+      margin-right: 0px;
+    }
+  }
+
   .img-product {
     width: 500px;
     height: 300px;
     max-width: 100%;
     max-height: 95%;
     object-fit: cover;
-    margin-right: 20px;
     border-radius: 5px;
     padding: 5%;
   }
@@ -37,6 +42,12 @@
   .product-details {
     margin: auto;
     padding: 10px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .product-details {
+      margin-bottom: 20px;
+    }
   }
   
   h3 {
