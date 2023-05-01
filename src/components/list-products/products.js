@@ -26,7 +26,7 @@ class ListProductComponent extends React.Component {
                     {this.state.products.map((product) => (
                     <li key={product.id} className='product-li'>
                         <NavLink to={"product/" + product.id} exact="true">
-                            <img src={product.imageUrl} alt={product.name} />
+                            <img className='img-product' src={product.imageUrl} alt={product.name} />
                         </NavLink>
                         <div className="product-details">
                         <h3>
