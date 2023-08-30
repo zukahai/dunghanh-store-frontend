@@ -1,6 +1,7 @@
 import React from 'react';
 import './home.css';
 import ButtonComponent from '../button';
+import axios from 'axios';
 
 class HomeComponent extends React.Component {
 
@@ -15,7 +16,12 @@ class HomeComponent extends React.Component {
         })
     }
     componentDidMount() {
-        document.title = "Home"
+        document.title = "Home";
+        // call api get
+        axios.get('https://www.fhs.com.tw/ads/api/Furnace/rest/json/hr/s16/VNW0014732vkokv2023-06').
+        then(res => {
+            console.log(res);
+        })
     }
     render() {
         return (
